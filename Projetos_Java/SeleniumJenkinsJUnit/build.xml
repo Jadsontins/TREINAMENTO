@@ -1,0 +1,48 @@
+<project name="JunitAntExample" default="test" basedir=".">
+
+	<property name="src" value="src" />
+	<property name="lib" value="lib" />
+	<property name="bin" value="bin" />
+	<property name="test.reports" value="reports" />
+	
+	
+	<path id="test.classpath">
+		<pathelement location="${bin}" />
+	 	<pathelement location="lib/junit-4.9.jar" />
+	 		<fileset dir="${lib}">
+	    		<include name="**/*.jar"/>
+	  		</fileset>
+	</path>
+	
+	
+	<target name="compile-test">
+		<javac srcdir="${src}" destdir="${bin}" verbose="true" includeantruntime="true">
+			<classpath refid="test.classpath" />
+		</javac>
+	</target>
+	
+	
+	<target name="test" depends="compile-test">
+		<delete dir="${test.reports}"/>
+		<mkdir dir="${test.reports}"/>
+		
+		<junit fork="yes" printsummary="yes" haltonfailure="no" showoutput="yes">
+	    	<batchtest fork="yes" todir="${test.reports}" >
+	      		<fileset dir="${src}">
+	        		<include name="**/*.java" />
+	      		</fileset>
+	    	</batchtest>
+			<formatter type="xml" />
+	    	<classpath refid="test.classpath" />
+	  	</junit>
+		
+	  	<junitreport todir="${test.reports}">
+	    	<fileset dir="${test.reports}">
+	      		<include name="TEST-*.xml" />
+	    	</fileset>
+	    	<report todir="${test.reports}" />
+	  	</junitreport>
+
+	</target>
+	
+</project>

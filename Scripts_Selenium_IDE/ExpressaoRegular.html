@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://eliasnogueira.com/" />
+<title>ExpressaoRegular</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ExpressaoRegular</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/selenium/exercicios/selenium_ide/ajybuyje/avancado/boleto/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sacado</td>
+	<td>Alexandre Santos</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sacadoDOC</td>
+	<td>445.576.982-04</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=endereco1</td>
+	<td>Av Paulista, 1345 apt 178</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=endereco2</td>
+	<td>Bela Cintra/SP</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=taxaBoleto</td>
+	<td>2,50</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=valor</td>
+	<td>300,00</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=banco</td>
+	<td>label=Bradesco</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>regexp:[0-9]{5}.[0-9]{5} [0-9]{5}.[0-9]{6} [0-9]{5}.[0-9]{6} [0-9]{1} [0-9]{14}</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

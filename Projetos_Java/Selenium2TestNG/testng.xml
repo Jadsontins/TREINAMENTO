@@ -1,0 +1,8 @@
+<test name="Execucao">
+  <groups>
+    <run>
+      <include name="sanidade"/>
+    </run>
+  </groups>
+</test>
+

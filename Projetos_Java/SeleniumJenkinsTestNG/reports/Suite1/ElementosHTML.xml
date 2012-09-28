@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="ELIASNOGUEIB6E9" name="com.eliasnogueira.seleniumjenkins.test.ElementosHTML" tests="1" failures="1" timestamp="11 Sep 2011 18:53:54 GMT" time="9.375" errors="0">
+  <testcase name="test" time="3.41" classname="com.eliasnogueira.seleniumjenkins.test.ElementosHTML">
+    <failure type="org.openqa.selenium.NoSuchElementException" message="Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;id&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;respostaa&amp;quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &amp;apos;2.3.0&amp;apos;, revision: &amp;apos;13158&amp;apos;, time: &amp;apos;2011-08-01 18:14:01&amp;apos;
+System info: os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.6.0_26&amp;apos;
+Driver info: driver.version: RemoteWebDriver">
+      <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"respostaa"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.3.0', revision: '13158', time: '2011-08-01 18:14:01'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_26'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:131)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:105)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:405)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:193)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:210)
+	at org.openqa.selenium.By$ById.findElement(By.java:199)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:185)
+	at com.eliasnogueira.seleniumjenkins.test.ElementosHTML.test(ElementosHTML.java:66)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"id","selector":"respostaa"}
+Build info: version: '2.3.0', revision: '13158', time: '2011-08-01 18:14:01'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_26'
+Driver info: driver.version: unknown
+	at <anonymous class>.<anonymous method>(file:///C:/Windows/TEMP/anonymous4733339306681696591webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js -> file:///C:/Windows/TEMP/anonymous4733339306681696591webdriver-profile/extensions/fxdriver@googlecode.com/components/firefoxDriver.js:375)
+	at <anonymous class>.<anonymous method>(file:///C:/Windows/TEMP/anonymous4733339306681696591webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js -> file:///C:/Windows/TEMP/anonymous4733339306681696591webdriver-profile/extensions/fxdriver@googlecode.com/components/firefoxDriver.js:398)
+	at <anonymous class>.<anonymous method>(file:///C:/Windows/TEMP/anonymous4733339306681696591webdriver-profile/extensions/fxdriver@googlecode.com/components/nsCommandProcessor.js:306)
+	at <anonymous class>.<anonymous method>(file:///C:/Windows/TEMP/anonymous4733339306681696591webdriver-profile/extensions/fxdriver@googlecode.com/components/nsCommandProcessor.js:320)
+	at <anonymous class>.<anonymous method>(file:///C:/Windows/TEMP/anonymous4733339306681696591webdriver-profile/extensions/fxdriver@googlecode.com/components/nsCommandProcessor.js:197)
+... Removed 28 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

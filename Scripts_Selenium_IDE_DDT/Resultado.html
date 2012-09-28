@@ -1,0 +1,251 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>2</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>12</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.3</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.0</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">AdicionarCliente</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">AdicionarCliente.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">AdicionarCliente</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>loadTestData</td>
+	<td>file:///C:/Qualister/Scripts_Selenium/Selenium_IDE_DataDriven/AdicionarCliente.xml</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/selenium/exercicios/selenium_comp/scysnlkw/ajaxCRUD/exemplo/</td>
+	<td></td>
+</tr>
+<tr class="        status_done" style="cursor: pointer;">
+	<td>while</td>
+	<td>!testdata.EOF()</td>
+	<td></td>
+</tr>
+<tr class="      status_done" style="cursor: pointer;">
+	<td>nextTestData</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="      status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=input.btn.editingSize</td>
+	<td></td>
+</tr>
+<tr class="      status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=table[name=form] &gt; tbody &gt; tr &gt; td &gt; input[name=fldField1]</td>
+	<td></td>
+</tr>
+<tr class="      status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=table[name=form] &gt; tbody &gt; tr &gt; td &gt; input[name=fldField1]</td>
+	<td>${nome}</td>
+</tr>
+<tr class="      status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=fldField2</td>
+	<td>${sobrenome}</td>
+</tr>
+<tr class="      status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>name=fldCertainFields</td>
+	<td>label=${pagamento}</td>
+</tr>
+<tr class="      status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=fldLongField</td>
+	<td>${observacao}</td>
+</tr>
+<tr class="      status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//input[@value='Salvar Item']</td>
+	<td></td>
+</tr>
+<tr class="      status_done" style="cursor: pointer;">
+	<td>waitForTextPresent</td>
+	<td>${nome}</td>
+	<td></td>
+</tr>
+<tr class="      status_passed" style="cursor: pointer;">
+	<td>assertTextPresent</td>
+	<td>${nome}</td>
+	<td></td>
+</tr>
+<tr class="      status_passed" style="cursor: pointer;">
+	<td>assertTextPresent</td>
+	<td>${sobrenome}</td>
+	<td></td>
+</tr>
+<tr class="      status_passed" style="cursor: pointer;">
+	<td>assertTextPresent</td>
+	<td>${pagamento}</td>
+	<td></td>
+</tr>
+<tr class="      status_passed" style="cursor: pointer;">
+	<td>assertTextPresent</td>
+	<td>${observacao}</td>
+	<td></td>
+</tr>
+<tr class="      status_done" style="cursor: pointer;">
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/AdicionarCliente.html
+info: Executing: |loadTestData | file:///C:/Qualister/Scripts_Selenium/Selenium_IDE_DataDriven/AdicionarCliente.xml |  |
+info: Executing: |open | /selenium/exercicios/selenium_comp/scysnlkw/ajaxCRUD/exemplo/ |  |
+info: Executing: |while | !testdata.EOF() |  |
+info: Executing: |nextTestData |  |  |
+info: &lt;test nome=&quot;Fulano&quot; sobrenome=&quot;da Silva&quot; pagamento=&quot;PagSeguro&quot; observacao=&quot;Envio por Sedex&quot;/&gt;
+info: Executing: |click | css=input.btn.editingSize |  |
+info: Executing: |waitForElementPresent | css=table[name=form] &gt; tbody &gt; tr &gt; td &gt; input[name=fldField1] |  |
+info: Executing: |type | css=table[name=form] &gt; tbody &gt; tr &gt; td &gt; input[name=fldField1] | ${nome} |
+info: Executing: |type | name=fldField2 | ${sobrenome} |
+info: Executing: |select | name=fldCertainFields | label=${pagamento} |
+info: Executing: |type | name=fldLongField | ${observacao} |
+info: Executing: |click | //input[@value=&apos;Salvar Item&apos;] |  |
+info: Executing: |waitForTextPresent | ${nome} |  |
+info: Executing: |assertTextPresent | ${nome} |  |
+info: Executing: |assertTextPresent | ${sobrenome} |  |
+info: Executing: |assertTextPresent | ${pagamento} |  |
+info: Executing: |assertTextPresent | ${observacao} |  |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | !testdata.EOF() |  |
+info: Executing: |nextTestData |  |  |
+info: &lt;test nome=&quot;Ciclano&quot; sobrenome=&quot;Santos&quot; pagamento=&quot;PayPal&quot; observacao=&quot;Envio PAC&quot;/&gt;
+info: Executing: |click | css=input.btn.editingSize |  |
+info: Executing: |waitForElementPresent | css=table[name=form] &gt; tbody &gt; tr &gt; td &gt; input[name=fldField1] |  |
+info: Executing: |type | css=table[name=form] &gt; tbody &gt; tr &gt; td &gt; input[name=fldField1] | ${nome} |
+info: Executing: |type | name=fldField2 | ${sobrenome} |
+info: Executing: |select | name=fldCertainFields | label=${pagamento} |
+info: Executing: |type | name=fldLongField | ${observacao} |
+info: Executing: |click | //input[@value=&apos;Salvar Item&apos;] |  |
+info: Executing: |waitForTextPresent | ${nome} |  |
+info: Executing: |assertTextPresent | ${nome} |  |
+info: Executing: |assertTextPresent | ${sobrenome} |  |
+info: Executing: |assertTextPresent | ${pagamento} |  |
+info: Executing: |assertTextPresent | ${observacao} |  |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | !testdata.EOF() |  |
+info: Executing: |nextTestData |  |  |
+info: &lt;test nome=&quot;Deltrano&quot; sobrenome=&quot;Matos&quot; pagamento=&quot;Cartao de Credito&quot; observacao=&quot;Envio Sedex&quot;/&gt;
+info: Executing: |click | css=input.btn.editingSize |  |
+info: Executing: |waitForElementPresent | css=table[name=form] &gt; tbody &gt; tr &gt; td &gt; input[name=fldField1] |  |
+info: Executing: |type | css=table[name=form] &gt; tbody &gt; tr &gt; td &gt; input[name=fldField1] | ${nome} |
+info: Executing: |type | name=fldField2 | ${sobrenome} |
+info: Executing: |select | name=fldCertainFields | label=${pagamento} |
+info: Executing: |type | name=fldLongField | ${observacao} |
+info: Executing: |click | //input[@value=&apos;Salvar Item&apos;] |  |
+info: Executing: |waitForTextPresent | ${nome} |  |
+info: Executing: |assertTextPresent | ${nome} |  |
+info: Executing: |assertTextPresent | ${sobrenome} |  |
+info: Executing: |assertTextPresent | ${pagamento} |  |
+info: Executing: |assertTextPresent | ${observacao} |  |
+info: Executing: |endWhile |  |  |
+info: Executing: |while | !testdata.EOF() |  |
+</pre></body></html>

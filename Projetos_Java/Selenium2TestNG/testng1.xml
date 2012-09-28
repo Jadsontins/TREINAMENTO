@@ -1,0 +1,7 @@
+<test name="Execucao">
+  <groups>
+    <run>
+      <include name="cliente"/>
+    </run>
+  </groups>
+</test>

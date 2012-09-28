@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="12270" started-at="2011-08-26T01:10:11Z" finished-at="2011-08-26T01:10:23Z">
+    <groups>
+      <group name="sanidade">
+        <method signature="ClienteTest.adicionaRemoveCliente(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.eliasnogueira.selenium2testng.datadriven.ClienteTest@58ecb281]" name="adicionaRemoveCliente" class="com.eliasnogueira.selenium2testng.datadriven.ClienteTest"/>
+      </group>
+    </groups>
+    <test name="Default test" duration-ms="12270" started-at="2011-08-26T01:10:11Z" finished-at="2011-08-26T01:10:23Z">
+      <class name="com.eliasnogueira.selenium2testng.datadriven.ClienteTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.eliasnogueira.selenium2testng.datadriven.ClienteTest@58ecb281]" name="setup" is-config="true" duration-ms="957" started-at="2011-08-26T01:10:11Z" finished-at="2011-08-26T01:10:12Z">
+        </test-method>
+        <test-method status="PASS" signature="adicionaRemoveCliente(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.eliasnogueira.selenium2testng.datadriven.ClienteTest@58ecb281]" name="adicionaRemoveCliente" duration-ms="5766" started-at="2011-08-26T01:10:12Z" description="Adiciona e remove cliente" finished-at="2011-08-26T01:10:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Elias]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nogueira]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[PagSeguro]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Envio por enc. normal]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="adicionaRemoveCliente(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.eliasnogueira.selenium2testng.datadriven.ClienteTest@58ecb281]" name="adicionaRemoveCliente" duration-ms="5419" started-at="2011-08-26T01:10:18Z" description="Adiciona e remove cliente" finished-at="2011-08-26T01:10:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Joao]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dos Santos]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[PayPal]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Envio Sedex 10]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.eliasnogueira.selenium2testng.datadriven.ClienteTest@58ecb281]" name="tearDown" is-config="true" duration-ms="102" started-at="2011-08-26T01:10:23Z" finished-at="2011-08-26T01:10:23Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

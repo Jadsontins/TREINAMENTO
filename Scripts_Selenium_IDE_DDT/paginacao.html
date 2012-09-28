@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.eliasnogueira.com" />
+<title>paginacao</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">paginacao</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/selenium/exercicios/selenium_ide/ajybuyje/avancado/datadriven/examples/example.php</td>
+	<td></td>
+</tr>
+<!--cria as variaveis iniciais-->
+<tr>
+	<td>store</td>
+	<td>Teste 2</td>
+	<td>nome</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>2</td>
+	<td>count</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>paginacao</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//tr[${count}]/td/span</td>
+	<td>localizacaoNome</td>
+</tr>
+<!--cria o laco-->
+<tr>
+	<td>label</td>
+	<td>laco</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>storedVars[&quot;nome&quot;] != storedVars[&quot;localizaNome&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//tr[${count}]/td/span</td>
+	<td>localizacaoNome</td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>//tr[${count}]/td/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars[&quot;nome&quot;] == storedVars[&quot;localizacaoNome&quot;]</td>
+	<td>clica</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars[&quot;count&quot;] &gt; 3</td>
+	<td>pula</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{storedVars[&quot;count&quot;]++}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>se nao encontrou informacao na primeira pagina pula para a proxima</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>pula</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{storedVars[&quot;paginacao&quot;]++}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=${paginacao}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{storedVars[&quot;count&quot;] = 2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotolabel</td>
+	<td>laco</td>
+	<td></td>
+</tr>
+<!--se encontrou o dado clica em delete-->
+<tr>
+	<td>label</td>
+	<td>clica</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[${count}]/td[5]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Tem certeza que você deseja remover este item?</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

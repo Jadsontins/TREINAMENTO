@@ -1,0 +1,9 @@
+<testdata>
+	<test nome="Fulano" sobrenome="da Silva" pagamento="PagSeguro" observacao="Envio por Sedex" />
+	<test nome="Ciclano" sobrenome="Santos" pagamento="PayPal" observacao="Envio PAC" />
+	<test nome="Deltrano" sobrenome="Matos" pagamento="Cartao de Credito" observacao="Envio Sedex" />
+</testdata>
+
+
+
+

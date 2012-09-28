@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://eliasnogueira.com/" />
+<title>ElementosHTML</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ElementosHTML</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/selenium/exercicios/selenium_ide/ajybuyje/avancado/elementos/index.php</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=nome</td>
+	<td>Fulano</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=email</td>
+	<td>fulano@terra.com.br</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=senha</td>
+	<td>123456</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@name='formato' and @value='texto']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=tipo</td>
+	<td>label=Profissional - Paga</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>name=interesse[]</td>
+	<td>label=Teste de Software</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>name=interesse[]</td>
+	<td>label=Análise de Negócio/Requsitos</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=comentario</td>
+	<td>Nao receber spam</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=resposta</td>
+	<td>Caro, Fulano <br />O email cadastrado foi: fulano@terra.com.br<br /><br />Você selecionou o item Receber newsletter<br />O email deve ser enviado com formato: Texto<br />O Tipo de Assinatura selecionado foi: Profissional - Paga<br /> <br />Seus assuntos de interesse são: <br />Teste de Software<br />Análise de Negócio/Requsitos<br /> <br />Comentário: <br />Nao receber spam</td>
+</tr>
+</tbody></table>
+</body>
+</html>
